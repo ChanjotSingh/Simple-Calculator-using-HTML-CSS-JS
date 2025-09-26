@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  
+  <link rel="stylesheet" href="../styles/calculator.css">
+
+</head>
+
+<body>
+  
+<p class="js-display display"></p>
+<p>
+  <button class="numberButtons" onclick="
+    calculation += '1';
+    displayOutput();">1</button>
+  <button class="numberButtons" onclick="
+    calculation += '2';
+    displayOutput();">2</button>
+  <button class="numberButtons" onclick="
+    calculation += '3';
+    displayOutput();">3</button>
+  <button class="operatorButtons" onclick="
+    calculation += '+';
+    displayOutput();
+    ">+</button>
+</p>
+<p>
+  <button class="numberButtons" onclick="
+    calculation += '4';
+    displayOutput();
+    ">4</button>
+  <button class="numberButtons" onclick="
+    calculation += '5';
+    displayOutput();
+    ">5</button>
+  <button class="numberButtons" onclick="
+    calculation += '6';
+    displayOutput();
+    ">6</button>
+  <button class="operatorButtons" onclick="
+    calculation += '-';
+    displayOutput();
+    ">-</button>
+</p>
+<p>
+  <button class="numberButtons" onclick="
+    calculation += '7';
+    displayOutput();
+    ">7</button>
+  <button class="numberButtons" onclick="
+    calculation += '8';
+    displayOutput();
+    ">8</button>
+  <button class="numberButtons" onclick="
+    calculation += '9';
+    displayOutput();
+    ">9</button>
+  <button class="operatorButtons" onclick="
+    calculation += '*';
+    displayOutput();
+    ">*</button>
+</p>
+<p>
+  <button class="numberButtons" onclick="
+    calculation += '0';
+    displayOutput();
+    ">0</button>
+  <button class="numberButtons" onclick="
+    calculation += '.';
+    displayOutput();
+    ">.</button>
+  <button class="numberButtons" onclick="
+    calculation = eval(calculation);
+    displayOutput();"
+    >=</button>
+  <button class="operatorButtons" onclick="
+    calculation += '/';
+    displayOutput();
+    ">/</button>
+</p>
+<p>
+  <button class="numberButtons clearButton" onclick="
+    calculation = '';
+    displayOutput();
+    localStorage.removeItem('calculation');
+    ">Clear</button>
+</p>
+
+<script src="../scripts/calculator.js"></script>
+
+</body>
+</html>
